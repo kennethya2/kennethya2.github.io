@@ -175,3 +175,5 @@ public class LocationMapActivity extends AppCompatActivity{
     }
 }
 ```
+
+<a href="https://github.com/kennethya2/LocationMapDemo"><i class="fa fa-fw fa-github"></i> GitHub</a>
