@@ -15,9 +15,10 @@ image:
 - [MapFragment地圖設定](#mapfragment地圖設定)
 - [監聽取得GPS經緯度](#監聽取得gps經緯度)
 - [地圖顯示目前位置](#地圖顯示目前位置)
-
-### 定位權限檢查
+  
 ----
+### 定位權限檢查
+
 App首先於Manifest必須定義定位權限 
 ``<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />``，在android 6.0以上版本 (API level 23)，對於危險權限的存取需要經過使用者同意。
 
@@ -31,10 +32,10 @@ if (ActivityCompat.checkSelfPermission(mContext, android.Manifest.permission.ACC
     // do some thing
 }
 ```
-
-
-### MapFragment地圖設定
+  
 ----
+### MapFragment地圖設定
+
 在Manifest定義啟用Google Maps Android API服務的金鑰
 ``` xml
 <meta-data
@@ -64,10 +65,10 @@ public SupportMapFragment mMapFragment ;
         android:layout_height="match_parent"
         class="com.google.android.gms.maps.SupportMapFragment" />
 ```
-
-
-### 監聽取得gps經緯度
+  
 ----
+### 監聽取得gps經緯度
+
 #### 存取經緯度必須實作三種介面
 
 1 .GoogleApiClient.ConnectionCallbacks
@@ -149,10 +150,9 @@ private synchronized void setFuseLocation(Location currentLocation){
     mContext.sendBroadcast(intent);
 }
 ```
-
-
-### 地圖顯示目前位置
+  
 ----
+### 地圖顯示目前位置
 
 畫面利用MarkerOptions物件，將title 片段描述snippet 經緯度LatLng存入，並於mMap呈現.
 ```java
