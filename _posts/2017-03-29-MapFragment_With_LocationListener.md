@@ -154,6 +154,7 @@ private synchronized void setFuseLocation(Location currentLocation){
 ----
 ### 地圖顯示目前位置
 
+
 畫面利用MarkerOptions物件，將title 片段描述snippet 經緯度LatLng存入，並於mMap呈現.
 ```java
 public class LocationMapActivity extends AppCompatActivity{
